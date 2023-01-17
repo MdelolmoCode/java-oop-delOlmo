@@ -4,7 +4,7 @@ public class Product {
 
     // atributos encapsulados
     private String name;
-    private Integer ID;
+    private Integer id;
     private Double price;
 
     // constructores
@@ -14,32 +14,32 @@ public class Product {
 
     public Product(String name, Integer id, Double price) {
         this.name = name;
-        this.id = id;
+        this.id = this.id;
         this.price = price;
     }
 
     // métodos GETTER. devuelven atributo
-    
+
     public String getName() {
         return name;
     }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public Double getPrice() {
+        return price;
+    }
+
+    // métodos SETTER. poner atributo
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public Integer getID() {
-        return ID;
-    }
-
-    // métodos SETTER. poner atributo
-
-    public void setID(Integer ID) {
-        this.ID = ID;
-    }
-
-    public Double getPrice() {
-        return price;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public void setPrice(Double price) {
