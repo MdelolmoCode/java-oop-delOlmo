@@ -9,6 +9,7 @@ public class Product {
 
     // constructores
     // constructor vacio
+
     public Product() {
     }
 
@@ -32,7 +33,7 @@ public class Product {
         return price;
     }
 
-    // métodos SETTER. poner atributo
+    // métodos SETTER. dar valor atributo
 
     public void setName(String name) {
         this.name = name;
@@ -45,4 +46,16 @@ public class Product {
     public void setPrice(Double price) {
         this.price = price;
     }
+
+    // método TO STRING
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "name='" + name + '\'' +
+                ", id=" + id +
+                ", price=" + price +
+                '}';
+    }
+
 }
